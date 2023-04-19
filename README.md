@@ -8,6 +8,8 @@ Requirements:
 - Activated Autologin
 - Network Connection
 
+- Autodarts Account
+- Autodarts Board-ID
 
 Run this Command to start
 
