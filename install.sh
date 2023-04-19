@@ -1,5 +1,7 @@
 #!/bin/bash
 
+IP=$(hostname -I)
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NOCOLOR='\033[0m'
@@ -73,3 +75,6 @@ wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/au
 echo -e ${GREEN}Finished${NOCOLOR}
 sleep 5
 clear -x
+
+echo -e ${GREEN}Now go to http://$IP:3180 to finish your Configuration of Autodarts${NOCOLOR}
+echo Please consider restarting your computer after finishing ;D
