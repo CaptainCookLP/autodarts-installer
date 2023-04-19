@@ -8,10 +8,10 @@ NOCOLOR='\033[0m'
 
 clear
 
-echo -e ${RED}Huge Thanks to TmO & wusaaa${NOCOLOR}
+echo -e ${RED}'Huge Thanks to TmO & wusaaa'${NOCOLOR}
 echo .
 echo .
-echo -e ${RED}Reclaimer: This is just an Installer Script for Autodarts & Autodarts-Caller!!!${NOCOLOR}
+echo -e ${RED}'Reclaimer: This is just an Installer Script for Autodarts & Autodarts-Caller!!!'${NOCOLOR}
 sleep 15
 clear
 
@@ -70,6 +70,7 @@ cd ~
 wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/kiosk.sh
 sed -i 's/BOARD_ID/'"$board"'/' ~/kiosk.sh
 sudo chmod +x kiosk.sh
+mkdir ~/.config/autostart
 cd ~/.config/autostart
 wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
 echo -e ${GREEN}Finished${NOCOLOR}
@@ -77,4 +78,4 @@ sleep 5
 clear -x
 
 echo -e ${GREEN}Now go to http://$IP:3180 to finish your Configuration of Autodarts${NOCOLOR}
-echo Please consider restarting your computer after finishing ;D
+echo 'Please consider restarting your computer after finishing ;D'
