@@ -8,10 +8,10 @@ NOCOLOR='\033[0m'
 
 clear
 
-echo e- ${RED}Huge Thanks to TmO & wusaaa${NOCOLOR}
+echo -e ${RED}Huge Thanks to TmO & wusaaa${NOCOLOR}
 echo .
 echo .
-echo e- ${RED}Reclaimer: This is just an Installer Script for Autodarts & Autodarts-Caller!!!${NOCOLOR}
+echo -e ${RED}Reclaimer: This is just an Installer Script for Autodarts & Autodarts-Caller!!!${NOCOLOR}
 sleep 15
 clear
 
