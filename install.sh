@@ -13,7 +13,8 @@ clear -x
 echo -e ${RED}Searching for Updates and Installing required Software${NOCOLOR}
 sleep 5
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install git python-pip3 curl unclutter wget -y
+sudo apt-get install git pip3 -y
+sudo apt-get install curl unclutter -y
 cd ~
 echo -e ${RED}Finished${NOCOLOR}
 sleep 5
