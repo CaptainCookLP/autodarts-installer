@@ -60,7 +60,7 @@ sed -i 's/autodarts_email=/&'"$mail"'/' ~/autodarts-caller/custom.sh
 sed -i 's/autodarts_password=/&'"$pass"'/' ~/autodarts-caller/custom.sh
 sed -i 's/autodarts_board_id=/&'"$board"'/' ~/autodarts-caller/custom.sh
 sed -i 's+media_path=+&~/sounds+' ~/autodarts-caller/custom.sh
-sed -i 's/caller=/&aiden-m-english-uk/' ~/autodarts-caller/custom.sh
+sed -i '0,/caller=/ s/caller=/&aiden-m-english-uk/' ~/autodarts-caller/custom.sh
 echo -e ${GREEN}Finished${NOCOLOR}
 sleep 5
 clear -x
