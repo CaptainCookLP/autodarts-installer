@@ -57,7 +57,7 @@ clear -x
 echo -e ${RED}Creating Startscript${NOCOLOR}
 cd ~
 wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/kiosk.sh
-sed -i 's/BOARD_ID/&'"$board"'/' ~/kiosk.sh
+sed -i 's/BOARD_ID/'"$board"'/' ~/kiosk.sh
 sudo chmod +x kiosk.sh
 echo -e ${RED}Finished${NOCOLOR}
 sleep 5
