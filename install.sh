@@ -44,7 +44,6 @@ cd ~
 git clone https://github.com/lbormann/autodarts-caller.git
 cd ~/autodarts-caller
 pip install -r requirements.txt
-sudo chmod +x start.sh
 mkdir ~/sounds
 echo -e ${GREEN}Finished${NOCOLOR}
 sleep 5
@@ -61,6 +60,7 @@ sed -i 's/autodarts_password=/&'"$pass"'/' ~/autodarts-caller/custom.sh
 sed -i 's/autodarts_board_id=/&'"$board"'/' ~/autodarts-caller/custom.sh
 sed -i 's+media_path=+&~/sounds+' ~/autodarts-caller/custom.sh
 sed -i '0,/caller=/ s/caller=/&aiden-m-english-uk/' ~/autodarts-caller/custom.sh
+sudo chmod +x custom.sh
 echo -e ${GREEN}Finished${NOCOLOR}
 sleep 5
 clear -x
