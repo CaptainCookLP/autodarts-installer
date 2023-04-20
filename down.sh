@@ -14,4 +14,5 @@ sudo chmod +x kiosk.sh
 sudo chmod +x install.sh
 sudo chmod +x main.sh
 
-./home/$USER/autodarts-installer/main.sh &
+cd /home/$USER/autodarts-installer
+./main.sh &
