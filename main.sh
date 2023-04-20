@@ -37,6 +37,7 @@ function KIOSK {
 }
 
 function AUTOSTART {
+	mkdir /home/$USER/.config/autostart
 	cd /home/$USER/.config/autostart
 	
 	wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
