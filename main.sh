@@ -41,7 +41,7 @@ function AUTOSTART {
 	cd /home/$USER/.config/autostart
 	
 	wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
-	sed -i 's/USERNAME/'"$USER"'/' home/$USER/.config/autostart/autostartkiosk.desktop
+	sed -i 's/USERNAME/'"$USER"'/' /home/$USER/.config/autostart/autostartkiosk.desktop
 }
 
 #Menu
