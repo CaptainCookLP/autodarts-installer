@@ -33,7 +33,8 @@ echo Autodarts is Running
 firefox --kiosk https://autodarts.io/boards/BOARD_ID/follow &
 
 # Start Autodarts-Caller in directory /home/autodarts
-~/autodarts-caller/custom.sh &
+cd ~/autodarts-caller/
+./custom.sh &
 
 # Removing the Mousecursor
 unclutter -idle 0.01 -root &
