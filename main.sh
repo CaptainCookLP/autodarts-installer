@@ -32,7 +32,7 @@ function KIOSK {
 	gsettings set org.gnome.desktop.screensaver lock-enabled false
 	
 	cd ~/autodarts-installer
-	sed -i 's/BOARD_ID/'"$board"'/' ~/kiosk.sh
+	sed -i 's/BOARD_ID/'"$board"'/' ~/autodarts-caller/kiosk.sh
 	sudo chmod +x kiosk.sh
 }
 
