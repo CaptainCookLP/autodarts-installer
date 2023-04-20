@@ -15,4 +15,4 @@ sudo chmod +x install.sh
 sudo chmod +x main.sh
 
 cd /home/$USER/autodarts-installer
-./main.sh &
+./main.sh
