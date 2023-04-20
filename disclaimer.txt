@@ -1,0 +1,7 @@
+Welcome to Autodarts AutoInstaller!!!!
+
+This Installer is a simple way to install your Autodarts-Client.
+You can choose between different Plugins, Options & Tweaks to your Client
+
+
+Huge thanks to TmO & wusaaa
