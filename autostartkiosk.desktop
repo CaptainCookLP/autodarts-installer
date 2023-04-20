@@ -1,7 +1,7 @@
 
 [Desktop Entry]
 Type=Application
-Exec=~/kiosk.sh
+Exec=/home/USERNAME/kiosk.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
