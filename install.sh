@@ -21,7 +21,7 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 clear -x
 
-echo -e ${GREEN}Searching for Updates and Installing requiGREEN Software${NOCOLOR}
+echo -e ${GREEN}Searching for Updates and Installing required Software${NOCOLOR}
 sleep 5
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git python3-pip -y
@@ -73,6 +73,7 @@ sudo chmod +x kiosk.sh
 mkdir ~/.config/autostart
 cd ~/.config/autostart
 wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
+sed -i 's/USERNAME/'"$USER"'/' ~/.config/autostart/autostartkiosk.desktop
 echo -e ${GREEN}Finished${NOCOLOR}
 sleep 5
 clear -x
