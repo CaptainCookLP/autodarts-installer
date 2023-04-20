@@ -1,7 +1,7 @@
 
 [Desktop Entry]
 Type=Application
-Exec=/home/USERNAME/kiosk.sh
+Exec=/home/USERNAME/autodarts-installer/kiosk.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
