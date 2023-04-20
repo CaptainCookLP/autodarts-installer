@@ -32,15 +32,15 @@ function KIOSK {
 	gsettings set org.gnome.desktop.screensaver lock-enabled false
 	
 	cd ~/autodarts-installer
-	sed -i 's/BOARD_ID/'"$board"'/' ~/autodarts-caller/kiosk.sh
+	sed -i 's/BOARD_ID/'"$board"'/' ~/autodarts-installer/kiosk.sh
 	sudo chmod +x kiosk.sh
 }
 
 function AUTOSTART {
-	cd ~/.config/autostart
+	cd /home/$USER/.config/autostart
 	
 	wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
-	sed -i 's/USERNAME/'"$USER"'/' ~/.config/autostart/autostartkiosk.desktop
+	sed -i 's/USERNAME/'"$USER"'/' home/$USER/.config/autostart/autostartkiosk.desktop
 }
 
 #Menu
