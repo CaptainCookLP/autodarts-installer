@@ -32,13 +32,11 @@ function KIOSK {
 	gsettings set org.gnome.desktop.screensaver lock-enabled false
 	
 	cd ~/autodarts-installer
-	wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/kiosk.sh
 	sed -i 's/BOARD_ID/'"$board"'/' ~/kiosk.sh
 	sudo chmod +x kiosk.sh
 }
 
 function AUTOSTART {
-	mkdir ~/.config/autostart
 	cd ~/.config/autostart
 	
 	wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/autostartkiosk.desktop
@@ -69,7 +67,7 @@ function menu {
 	"Choose Options" "Choose your Options to install" \
 	"Enter Information" "Reenter your Information" \
 	"Reinstall" "Reinstall your previous choices" \
-	"EXIT" "Exit installer"3>&1 1>&2 2>&3)
+	"EXIT" "Exit installer" 3>&1 1>&2 2>&3)
 	
 	exitstatus=$?
 	if [ $exitstatus = 0 ]; then
@@ -84,11 +82,11 @@ function menu {
 			whiptail_install
 		;;
 		"EXIT")
-			break
+			exit
 		;;
 	esac
 	else
-		break
+		exit
 	fi
 }
 
@@ -133,7 +131,7 @@ function whiptail_info {
 	if (whiptail --title "Confirmation" --yesno "Is your Information correct? \n \nChoices: $choices \nMail: $mail \nBoard ID: $board" 12 78); then
 		progress_bar
 	else
-		echo "User selected No, exit status was $?."
+		menu
 	fi
 }
 
