@@ -120,6 +120,8 @@ menu=$(whiptail --title "Menu" --menu "Choose where you want to start" 25 78 16 
 "Enter Information" "Reenter your Information" \
 "Reinstall" "Reinstall your previous choices" 3>&1 1>&2 2>&3)
 
+REQUIREMENTS
+
 case $menu in
 	"Choose Options")
 		whiptail_choice
