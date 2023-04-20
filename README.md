@@ -14,5 +14,5 @@ Requirements:
 Run this Command to start
 
 ```
-wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/install.sh && sudo chmod +x install.sh && ./install.sh
+wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/down.sh && sudo chmod +x down.sh && ./down.sh
 ```
