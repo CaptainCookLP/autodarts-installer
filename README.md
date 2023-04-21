@@ -17,7 +17,9 @@ Run this Command to start
 ```
 wget https://raw.githubusercontent.com/CaptainCookLP/autodarts-installer/main/down.sh && sudo chmod +x down.sh && ./down.sh
 ```
+
 To-Do:
 
 - Add Autodarts-WLED
 - Add Update-Function
+- Add Advanced Logging
